@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss';
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('../../assets/footer.jpg') no-repeat;
+  background-size: cover;
+  color: $c-silver-one;
+}

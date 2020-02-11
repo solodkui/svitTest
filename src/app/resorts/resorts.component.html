@@ -1,0 +1,29 @@
+<section class="resorts">
+  <div class="wrapper">
+    <div class="resorts__title">
+      <h2>САНАТОРІЇ ТРУСКАВЦЯ</h2>
+    </div>
+    <div class="resorts__wrapper">
+      <app-resort
+        *ngFor="let resort of resortsService.resorts"
+        [image]="resort.image"
+        [spa]="resort.spa"
+        [wifi]="resort.wifi"
+        [abc]="resort.abc"
+        [p]="resort.p"
+        [food]="resort.food"
+        [best]="resort.best"
+        [discount]="resort.discount"
+        [pool]="resort.pool"
+        [thermal]="resort.thermal"
+        [spaH]="resort.spaH"
+        [title]="resort.title"
+        [subtitle]="resort.subtitle"
+        [priceNow]="resort.priceNow"
+        [priceLast]="resort.priceLast"
+        [green]="resort.green"
+        [people]="resort.people"
+      ></app-resort>
+    </div>
+  </div>
+</section>

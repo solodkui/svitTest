@@ -1,0 +1,145 @@
+@import '../../styles/variables.scss';
+
+.resort {
+  width: 100%;
+  height: 100%;
+  max-width: 310px;
+  margin: 0 auto;
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__icons {
+    padding: 10px;
+  }
+
+  // Hashtags
+  &__hashtag {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__best {
+    background-color: $c-orange-three;
+  }
+
+  &__discount {
+    background-color: $c-red;
+  }
+
+  &__pool {
+    background-color: $c-blue;
+  }
+
+  &__thermal {
+    background-color: $c-red-black;
+    border-radius: 3px;
+  }
+
+  &__spaH {
+    background-color: $c-green;
+    border-radius: 3px;
+  }
+
+  // Title
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: $c-black-one;
+    margin: 0;
+    padding-bottom: 15px;
+  }
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $c-grey;
+    padding-bottom: 50px;
+  }
+
+  // Price
+  &__price {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: $c-black-one;
+    padding-bottom: 5px;
+
+    &--now {
+      margin-right: 15px;
+    }
+    
+    &--last {
+      text-decoration: line-through;
+      color: $c-grey;
+    }
+
+    &--green {
+      color: $c-green-one;
+    }
+  }
+
+  &__people {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $c-grey;
+    padding-bottom: 20px;
+  }
+
+  &__button {
+    border: 1px solid $c-orange-four;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 45px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: $c-white;
+    cursor: pointer;
+    transition: $t-normal;
+
+    &--reserve {
+      background-color: $c-orange-four;
+      margin-bottom: 10px;
+
+      &:hover {
+        background-color: $c-black-one;
+        color: $c-orange-four;
+      }
+    }
+
+    &--detail {
+      background-color: transparent;
+      color: $c-orange-four;
+
+      &:hover {
+        background-color: $c-black-one;
+        color: $c-orange-four;
+      }
+    }
+  }
+}

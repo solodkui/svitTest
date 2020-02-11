@@ -1,0 +1,20 @@
+<div class="slider">
+  <div class="slider__wrapper">
+    <div class="slider__image">
+      <img src="{{ slide }}" alt="slide" class="js-slider-img">
+    </div>
+    <div class="slider__arrow slider__arrow--left" (click)="changeImage('left')">
+      <svg-icon src="../../assets/svg/arrow-left.svg" [svgStyle]="{ 'width.px': 15, 'height.px': 25 }"></svg-icon>
+    </div>
+    <div class="slider__arrow slider__arrow--right" (click)="changeImage('right')">
+      <svg-icon src="../../assets/svg/arrow-right.svg" [svgStyle]="{ 'width.px': 15, 'height.px': 25 }"></svg-icon>
+    </div>
+    <div class="slider__info">
+      <h2 class="slider__title">Чому варто обирати<br>санаторії Карпат?</h2>
+      <div class="slider__container">
+        <div class="slider__line"></div>
+        <div class="slider__more">Дізнатися більше</div>
+      </div>
+    </div>
+  </div>
+</div>

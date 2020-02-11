@@ -1,0 +1,50 @@
+@import '../../styles/variables.scss';
+
+.phones {
+  font-family: $f-montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+
+  &__phone {
+    display: none;
+  }
+
+  &--header {
+    display: flex;
+
+    .phones__item {
+      padding-right: 10px;
+      display: flex;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    .phones__text {
+      margin-bottom: 8px;
+    }
+  }
+
+  &--contacts {
+    .phones__icon {
+      display: none;
+    }
+
+    .phones__item {
+      padding-bottom: 10px;
+    }
+  }
+
+  &--footer {
+    .phones__icon {
+      display: none;
+    }
+
+    .phones__item {
+      padding-bottom: 10px;
+    }
+  }
+}

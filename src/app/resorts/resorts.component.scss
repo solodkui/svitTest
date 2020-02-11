@@ -1,0 +1,28 @@
+.resorts {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+
+  &__title {
+    background: url('../../assets/resorts-title.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+  }
+}

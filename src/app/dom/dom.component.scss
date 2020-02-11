@@ -1,0 +1,44 @@
+@import '../../styles/variables.scss';
+
+.dom {
+  position: relative;
+  padding: 25px 0;
+  margin-top: 443px;
+  display: flex;
+  justify-content: center;
+  
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: $c-grey;
+    padding-right: 10px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:last-child {
+      padding-right: 0;font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $c-black-one;
+      
+    }
+  }
+
+  &__circle {
+    width: 4px;
+    height: 4px;
+    margin-right: 10px;
+    background-color: #A97456;
+    border-radius: 50%;
+  }
+}

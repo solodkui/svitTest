@@ -1,0 +1,33 @@
+<header class="header">
+  <div class="wrapper">
+    <div class="header__wrapper">
+      <div class="header__phones">
+        <app-phones [type]="phonesType"></app-phones>
+      </div>
+      <div class="header__container">
+        <div class="header__payment">
+          <div class="header__icon">
+            <svg-icon src="../../assets/svg/visa.svg" [svgStyle]="{ 'width.px': 80, 'height.px': 15, 'marginRight.px': '3' }"></svg-icon>
+          </div>
+          <div class="header__payment_text">Оплата Онлайн</div>
+        </div>
+        <div class="header__search">
+          <!-- <div class="header__search_text">Пошук по турам</div> -->
+          <input class="header__search_input" type="text" placeholder="Пошук по турам">
+          <div class="header__icon">
+            <svg-icon src="../../assets/svg/search.svg" [svgStyle]="{ 'width.px': 24, 'height.px': 24, 'marginRight.px': '3', 'cursor': 'pointer' }"></svg-icon>
+          </div>
+        </div>
+      </div>
+      <div class="header__language" (click)="openLanguage()">
+        <div class="header__language_text">{{ language }}</div>
+        <div class="header__icon js-header-icon">
+          <svg-icon  src="../../assets/svg/arrow-down.svg" [svgStyle]="{ 'width.px': 20, 'height.px': 10, 'marginTop.px': '-5' }"></svg-icon>
+        </div>
+      </div>
+    </div>
+    <div class="header__logo">
+      <app-logo></app-logo>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+
+.logo {
+  &__wrapper {
+    display: flex;
+  }
+
+  &__text {
+    font-family: $f-montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 42px;
+    color: $c-orange-two;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 31px;
+  }
+}

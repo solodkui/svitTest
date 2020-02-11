@@ -1,0 +1,98 @@
+@import '../../styles/variables.scss';
+
+.header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  min-height: 174px;
+  background-color: $c-black;
+  display: flex;
+  justify-content: center;
+  font-family: $f-montserrat;
+  z-index: 10;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba($c-orange-one, 0.4);
+  }
+
+  &__phones {
+    padding-top: 15px;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__payment {
+    padding: 15px;
+    background-color: $c-black-orange;
+    display: flex;
+    width: 100%;
+    max-width: 270px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+
+    &_text {
+      padding-left: 8px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: $c-orange;
+      margin-top: -3px;
+    }
+  }
+
+  &__search {
+    height: 50px;
+    background-color: $c-orange-one;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 375px;
+
+    &_input {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: $c-black-orange-one;
+      background-color: $c-orange-one;
+      border: none;
+      outline: none;
+
+      &::placeholder {
+        color: $c-black-orange-one;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__language {
+    padding: 0 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &_text {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      margin-right: 5px;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+  }
+}

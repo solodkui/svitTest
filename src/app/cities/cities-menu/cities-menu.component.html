@@ -1,0 +1,9 @@
+<ul class="cities-menu">
+  <div class="cities-menu__wrapper">
+    <li class="cities-menu__item" *ngFor="let item of items">
+      <a id="cities-menu-{{item.id}}" href="{{item.link}}">
+        {{item.title}}
+      </a>
+    </li>
+  </div>
+</ul>

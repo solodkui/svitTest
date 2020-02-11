@@ -1,0 +1,36 @@
+<div class="resort">
+  <div class="resort__wrapper">
+    <div class="resort__image">
+      <img src="../../assets/resorts/{{ image }}.jpg" alt="{{ image }}">
+    </div>
+    <div class="resort__icons">
+      <svg-icon src="../../assets/svg/spa.svg"  *ngIf="spa"  [svgStyle]="{ 'width.px': 28, 'height.px': 28, 'marginRight.px': 15 }"></svg-icon>
+      <svg-icon src="../../assets/svg/wifi.svg" *ngIf="wifi" [svgStyle]="{ 'width.px': 28, 'height.px': 28, 'marginRight.px': 15 }"></svg-icon>
+      <svg-icon src="../../assets/svg/abc.svg"  *ngIf="abc"  [svgStyle]="{ 'width.px': 28, 'height.px': 28, 'marginRight.px': 15 }"></svg-icon>
+      <svg-icon src="../../assets/svg/p.svg"    *ngIf="p"    [svgStyle]="{ 'width.px': 26, 'height.px': 26, 'marginRight.px': 15 }"></svg-icon>
+      <svg-icon src="../../assets/svg/food.svg" *ngIf="food" [svgStyle]="{ 'width.px': 34, 'height.px': 24, 'marginRight.px': 15 }"></svg-icon>
+    </div>
+    <div class="resort__hashtags">
+      <span class="resort__hashtag resort__best"     *ngIf="best">Найкращі санаторії</span>
+      <span class="resort__hashtag resort__discount" *ngIf="discount">Знижка 5%</span>
+      <span class="resort__hashtag resort__pool"     *ngIf="pool">Санаторій з басейном</span>
+      <span class="resort__hashtag resort__thermal"  *ngIf="thermal">Термальні джерела</span>
+      <span class="resort__hashtag resort__spaH"     *ngIf="spaH">SPA</span>
+    </div>
+    <h4 class="resort__title">{{ title }}</h4>
+    <p class="resort__subtitle">{{ subtitle }}</p>
+    <p class="resort__price">
+      <span class="resort__price--now resort__price{{ green? '--green': '' }}">
+        {{ priceNow }}
+      </span>
+      <span class="resort__price--last">
+        {{ priceLast }}
+      </span>
+    </p>
+    <p class="resort__people">За {{ people }} людину</p>
+    <div class="resort__buttons">
+      <button class="resort__button resort__button--reserve">Забронювати тур</button>
+      <button class="resort__button resort__button--detail">Детальніше</button>
+    </div>
+  </div>
+</div>

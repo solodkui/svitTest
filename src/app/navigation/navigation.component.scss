@@ -1,0 +1,30 @@
+@import '../../styles/variables.scss';
+
+.navigation {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  font-family: $f-montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding: 10px 15px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
